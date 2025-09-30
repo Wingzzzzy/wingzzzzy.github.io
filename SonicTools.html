@@ -1,0 +1,46 @@
+<html><title>TEST</title>
+<head>
+  <meta charset="utf-8"></head>
+  <head> TEST </head>
+
+<body>
+
+<h1>JSON Config Generator</h1>
+
+<form>
+  <label for="game">Name of the game in one word (Example : SonicFrontiers) :</label><br>
+  <input type="text" id="game" name="game"><br>
+  <label for="modname">Mod Name:</label><br>
+  <input type="text" id="modname" name="modname"><br><br>
+  <label for="moddescription">Mod Description:</label><br>
+  <input type="text" id="moddescription" name="moddescription"><br><br>
+  <label for="authortitle">Author Title:</label><br>
+  <input type="text" id="authortitle" name="authortitle"><br><br>
+  <label for="authorname">Author Name:</label><br>
+  <input type="text" id="authorname" name="authorname"><br><br>
+  <label for="authorlink">Author Link:</label><br>
+  <input type="text" id="authorlink" name="authorlink"><br><br>
+  <label for="authordescription">Author Description:</label><br>
+  <input type="text" id="authordescription" name="authordescription"><br><br>
+  <label for="image">Add image link:</label><br>
+  <input type="text" id="image" name="image"><br><br>
+  <label for="download">Add download link:</label><br>
+  <input type="text" id="download" name="download"><br><br>
+  <input type="button" onclick="generateConfig()" value="Generate Config">
+</form> 
+
+<p>Generated JSON config:</p>
+<p id="config"></p>
+
+<script>
+  function generateConfig() {
+    var keys = ["game", "modname", "authortitle", "authorname", "authorlink", "authordescription", "image", "download"];
+ var config = {version: 1, type:"mod"};
+ for (i=0;i<keys.length;i++) 
+    config[keys[i]] = document.getElementById(keys[i]).value;
+document.getElementById("config").innerText = JSON.stringify(config, null, 4);
+    };
+</script>
+
+
+</body></html>

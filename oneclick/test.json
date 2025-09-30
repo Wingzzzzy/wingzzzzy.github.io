@@ -1,0 +1,56 @@
+//HedgeModManager Json Template for OneClick Install
+{"version":1,
+//For the moment is just mod type.
+"type":
+ "mod",
+//The name of the game all in one word.
+"game":
+ "SonicFrontiers",
+//The Title
+"name":
+ "HTML test for the HedgeModManager",
+//It works with HTML syntax but not with iframes
+"description":
+ "TEST",
+//You can have more then one author with custom titles and multiple on one title
+"authors":
+{
+  "Mod by": 
+   [{
+      "name": "Wingzzzzy",
+      "link": "https://wingzzzzy.xyz",
+      "description": "Test"
+   },
+  {
+    "name": "test2",
+    "link": "https://wingzzzzy.xyz",
+    "description": "Test4142"
+  }],
+  "Title 2": 
+   [{
+    "name": "Wingzzzzy",
+    "link": "https://wingzzzzy.xyz",
+    "description": "Test"
+   },
+  {
+    "name": "test2",
+    "link": "https://wingzzzzy.xyz",
+    "description": "Test4142"
+   }]
+  
+},
+// Images show up but also it shows up the video but it will not load up, Recomed all images to have 16:9 resolusion.
+"images":
+[
+  "https://www.placecage.com/300/200",
+  "https://www.placecage.com/c/460/300",
+  "https://www.placecage.com/g/155/300",
+  "https://www.placecage.com/g/155/250",
+  "https://www.placecage.com/g/140/100",
+  "https://www.placecage.com/c/140/200",
+  "https://www.placecage.com/gif/284/196"
+],
+//If you have a ssl certificate or Cloudflare for your protection use the port of the site recomend them to be 7z or zip
+"download":
+ "https://wingzzzzy.xyz:443/download/oneclick/RA2%20Sounds%20in%20Sonic.7z"
+}
